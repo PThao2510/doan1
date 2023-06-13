@@ -50,10 +50,21 @@ function Footer() {
                     </div>
                     <div className={cx("footer-policy")}>
                         <h2>Chính sách cửa hàng </h2>
-                        <p>Chính sách bảo mật </p>
-                        <p>Chính sách vận chuyển</p>
-                        <p>Chính sách đổi trả</p>
-                        <p>Chính sách bảo hành</p>
+                        <Link to="/policy/privacy">
+                            <p className={cx("footer-color")}>Chính sách bảo mật </p>
+                        </Link> 
+
+                        <Link to="/policy/return">
+                            <p className={cx("footer-color")}>Chính sách đổi trả </p>
+                        </Link>
+
+                        <Link to="/policy/shipping">
+                            <p className={cx("footer-color")}>Chính sách vận chuyển</p>
+                        </Link>
+                        
+                        <Link to="/policy/warranty">
+                            <p className={cx("footer-color")}>Chính sách bảo hành</p>
+                        </Link>
                     </div>
                     <div className={cx("footer-introduce")}>
                         <h2>Giới thiệu</h2>
